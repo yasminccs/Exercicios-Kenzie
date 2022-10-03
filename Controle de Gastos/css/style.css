@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    background-color:#2685da;
+}    
+
+main {
+    width: 1080px;
+    margin: 0 auto; /* aqui definiu um valor para top/bottom e para left/right está automático*/
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+main section {
+    background-color: white;
+    border-radius: 10px; /*propriedade usada para arrendondar as bordas*/
+    padding: 30px;
+}
+
+.quadradao {
+    width: 600px;
+}
+.quadradao h1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 5px; /* alterar a altura da linha*/
+}
+
+.quadradao .pontinho {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.quadradao input {
+    display: block;
+    width: 100%; /*porcentagem é uma unidade relativa, nesse caso, o elemento pega 100% do espaço disponível*/
+    border: none;
+    box-shadow: 0 0;
+    box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.12); /* código gerado em geradores na internet mesmo*/
+    outline: none; /*é a borda em volta do campo de inserção de texto que aparece quando ele é clicado*/
+    border-radius: 3px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box; /* por causa do padding, a borda ultrapassa o limite, então essa propriedade 
+    força com que esse limite seja respeitado*/
+    margin: 10px 0;
+}
+
+.quadradao button {
+    background-color: #2685da;
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.totalorca h2 {
+    font-weight: bold;
+    border-bottom: 1px solid #cecece; /*para estilizar uma borda, é necessário definir alguns parâmetros: 
+    tamanho em pixel, estilo "sólido" e a cor*/
+    padding-bottom: 5px;
+}
+
+
+.totalorca input {}
+.totalorca button {}
+
+
+
+.despesasin {}
+.despesasin h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.despesasin input {}
+.despesasin button {}
+
+
+
+.despesaGeral {}
+
+.titulodasdespesas {
+    display: flex;
+    margin: 40px 0;
+}
+.titulodasdespesas p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.titulodasdespesas .tiltaodespesa {
+    margin-right: 150px;
+}
+
+.listadasdespesas {}
+.listadasdespesas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c7f1cf;
+    color: #0c5c05;
+    font-weight: bold;
+    padding: 30px 20px;
+    border-radius: 2px;
+}
+
+
+.listadasdespesas li h3 {}
+.listadasdespesas li p {}
+.listadasdespesas li img {}
+
+
+
+.cilindrao {
+    width: 300px;
+}
+/* Seletor genérico criado para as divs dessa sessão já que as estilizações nessa parte serão 
+iguais/similares */
+.cilindrao div {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cilindrao div h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cilindrao div p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.orcamentin {}
+.orcamentin h3 {}
+.orcamentin p {
+    color: #78ce71;
+}
+
+.numberDespesas {}
+.numberDespesas h3 {}
+.numberDespesas p {
+    color: #e44f3c;
+}
+
+.saldin {}
+.saldin h3 {}
+.saldin p {
+    color: #64d2ff;
+}

@@ -1,0 +1,202 @@
+body {
+  background-color: #f4ece3;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER */
+
+.banner img {
+    width: 100%;
+}
+
+/* CONTEÚDO PRINCIPAL - produtos */
+
+.secaoProdutos {
+    padding-top: 74px;
+}
+.secaoProdutos .produtosLista {
+    margin: 0 270px; /* como a propriedade (max-width: 1330px;) não pegou aqui 
+    (não permetiu que as propriedades do flexbox funcionassem), então fiz uma margem.*/
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.secaoProdutos .cardProduto {
+    background-color: #fff;
+    width: 230px;
+    text-align: center;
+    padding: 22px 28px;
+    border: 2px solid #f5ebdc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.secaoProdutos .cardProduto img {}
+.secaoProdutos .cardProduto h3 {
+    color: #502314;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 28px auto;
+    min-height: 40px; /* deixar os h3 alinhados*/
+    max-width: 160px; /*deixar os h3 alinhados*/
+}
+.secaoProdutos .cardProduto p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.secaoProdutos .cardProduto button {
+    background-color: #f4ece3;
+    border: none;
+    border-radius: 8px;
+    width: 177px;
+    height: 42px;
+    color: #2D2D2D;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.fud {
+    padding-bottom: 20px; /* deixar o botão pra baixo dos 4 primeiros pra baixo igual dos outros 6, 
+    usando o h3 pra empurrar (bug)*/
+}
+
+/* RODAPÉ */
+
+.carrinho .infoResumo {
+    display: flex; /*deixar o (total; 32,90) lá no canto*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #502314;
+    border-radius: 32px 32px 0px 0px;
+    padding: 23px 0px;
+}
+
+.carrinho .infoUsuario {
+    margin: 0 270px;
+    padding: 30px;
+}
+.carrinho .infoUsuario h3{
+    font-weight: 500;
+    font-size: 40px;
+    color: #f7f5f0;
+    margin-bottom: 18px;
+}
+.carrinho .infoUsuario p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+    color: #f7f5f0;
+}
+.carrinho .infoResumo .infoPreco {
+    margin: 0 270px;
+    padding: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    color: #f7f5f0;
+
+}
+.carrinho {
+    background-color: #fff;
+}
+.carrinho .resumoPedido {
+    margin: 0 270px;
+    padding: 30px;
+}
+
+.carrinho .resumoPedido .listaProdutos {}
+.carrinho .resumoPedido .cardProduto {
+    background-color: #f4ece3;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.carrinho .resumoPedido .cardProduto .infoNome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrinho .resumoPedido .cardProduto .infoNome img {
+    width: 150px;
+}
+.carrinho .resumoPedido .cardProduto p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #502314;
+    margin: 30px;
+}
+
+.carrinho .resumoPedido .cardProduto .infoPreco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco p {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 24px;
+    color: #2D2D2D;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco img {
+    width: 14px;
+}
+
+.carrinho .resumoPedido .cardProduto .infoPreco button {
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 51px;
+    margin-left: 43px;
+    cursor: pointer;
+}
+
+.botaoFinalPedido {
+    margin: 0 270px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.botaoFinalPedido button {
+    width: 219px;
+    height: 51px;
+    background-color: #db3b1d;
+    border: 4px solid #db3b1d;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.botaoFinalPedido button ~ button {
+    background-color: #fff;
+    border: 4px solid #db3b1d;
+    color: #db3b1d;
+    cursor: pointer;
+} /*forma de seletor em que vc seleciona o irmao daquela tag*/
+
