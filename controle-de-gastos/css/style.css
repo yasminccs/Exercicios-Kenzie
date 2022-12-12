@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;600&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color:#2685da;
 }    
 
 main {
-    width: 1080px;
-    margin: 0 auto; /* aqui definiu um valor para top/bottom e para left/right está automático*/
-    margin-top: 150px;
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
@@ -15,7 +21,7 @@ main {
 
 main section {
     background-color: white;
-    border-radius: 10px; /*propriedade usada para arrendondar as bordas*/
+    border-radius: 10px;
     padding: 30px;
 }
 
@@ -23,9 +29,9 @@ main section {
     width: 600px;
 }
 .quadradao h1 {
-    font-size: 25px;
+    font-size: 1.8em;
     font-weight: bold;
-    line-height: 5px; /* alterar a altura da linha*/
+    line-height: 5px;
 }
 
 .quadradao .pontinho {
@@ -62,32 +68,18 @@ main section {
 }
 
 .totalorca h2 {
+    font-size: 1.3em;
     font-weight: bold;
     border-bottom: 1px solid #cecece; /*para estilizar uma borda, é necessário definir alguns parâmetros: 
     tamanho em pixel, estilo "sólido" e a cor*/
     padding-bottom: 5px;
 }
 
-
-.totalorca input {}
-.totalorca button {}
-
-
-
-.despesasin {}
 .despesasin h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
-
-
-.despesasin input {}
-.despesasin button {}
-
-
-
-.despesaGeral {}
 
 .titulodasdespesas {
     display: flex;
@@ -102,7 +94,6 @@ main section {
     margin-right: 150px;
 }
 
-.listadasdespesas {}
 .listadasdespesas li {
     display: flex;
     justify-content: space-between;
@@ -113,13 +104,6 @@ main section {
     padding: 30px 20px;
     border-radius: 2px;
 }
-
-
-.listadasdespesas li h3 {}
-.listadasdespesas li p {}
-.listadasdespesas li img {}
-
-
 
 .cilindrao {
     width: 300px;
@@ -140,20 +124,14 @@ iguais/similares */
     font-weight: bold;
 }
 
-.orcamentin {}
-.orcamentin h3 {}
 .orcamentin p {
     color: #78ce71;
 }
 
-.numberDespesas {}
-.numberDespesas h3 {}
 .numberDespesas p {
     color: #e44f3c;
 }
 
-.saldin {}
-.saldin h3 {}
 .saldin p {
     color: #64d2ff;
 }
