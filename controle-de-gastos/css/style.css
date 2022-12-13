@@ -7,16 +7,19 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color:#2685da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }    
 
 main {
     width: 990px;
-    margin: 0 auto;
-    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
 }
 
 main section {
@@ -29,7 +32,7 @@ main section {
     width: 600px;
 }
 .quadradao h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     line-height: 5px;
 }
@@ -41,16 +44,14 @@ main section {
 
 .quadradao input {
     display: block;
-    width: 100%; /*porcentagem é uma unidade relativa, nesse caso, o elemento pega 100% do espaço disponível*/
+    width: 100%;
     border: none;
     box-shadow: 0 0;
-    box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.12); /* código gerado em geradores na internet mesmo*/
-    outline: none; /*é a borda em volta do campo de inserção de texto que aparece quando ele é clicado*/
+    box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.108);
+    outline: none;
     border-radius: 3px;
     height: 30px;
     padding: 0 10px;
-    box-sizing: border-box; /* por causa do padding, a borda ultrapassa o limite, então essa propriedade 
-    força com que esse limite seja respeitado*/
     margin: 10px 0;
 }
 
@@ -70,8 +71,7 @@ main section {
 .totalorca h2 {
     font-size: 1.3em;
     font-weight: bold;
-    border-bottom: 1px solid #cecece; /*para estilizar uma borda, é necessário definir alguns parâmetros: 
-    tamanho em pixel, estilo "sólido" e a cor*/
+    border-bottom: 1px solid #cecece;
     padding-bottom: 5px;
 }
 
@@ -83,7 +83,7 @@ main section {
 
 .titulodasdespesas {
     display: flex;
-    margin: 40px 0;
+    margin: 30px 0px 17px 0px;
 }
 .titulodasdespesas p {
     font-size: 16px;
@@ -108,19 +108,18 @@ main section {
 .cilindrao {
     width: 300px;
 }
-/* Seletor genérico criado para as divs dessa sessão já que as estilizações nessa parte serão 
-iguais/similares */
+
 .cilindrao div {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 .cilindrao div h3 {
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .cilindrao div p {
-    font-size: 28px;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
