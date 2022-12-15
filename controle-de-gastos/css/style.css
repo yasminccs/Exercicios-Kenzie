@@ -66,10 +66,12 @@ main section {
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .totalorca h2 {
-    font-size: 1.3em;
+    font-size: 0.9em;
+    text-transform: uppercase;
     font-weight: bold;
     border-bottom: 1px solid #cecece;
     padding-bottom: 5px;
@@ -78,7 +80,7 @@ main section {
 .despesasin h2 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
 .titulodasdespesas {
@@ -103,6 +105,10 @@ main section {
     font-weight: bold;
     padding: 30px 20px;
     border-radius: 2px;
+}
+
+img#iconLixeira{
+    cursor: pointer;
 }
 
 .cilindrao {

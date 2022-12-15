@@ -21,15 +21,15 @@
 
             <div class="totalorca">
                 <h2>Total Orçamento</h2>
-                <input type="text"> <button>Calcular</button>
+                <input type="text" id="inputValorOrcamento"> <button id="calcularOrcamento">Calcular</button>
             </div>
 
             <div class="despesasin">
                 <h2>Nome Despesa</h2>
-                <input type="text">
+                <input type="text" id="nameDespesa">
 
                 <h2>Valor Despesa</h2>     
-                <input type="number"> <button>Adicionar Despesa</button>
+                <input type="number" id="valueDespesa"> <button id="addDespesa">Adicionar Despesa</button>
             </div>
 
             <div class="despesaGeral">
@@ -40,9 +40,9 @@
 
                <ul class="listadasdespesas">
                    <li>
-                       <h3>- Hotel</h3>
-                       <p>$43</p>
-                       <img src="img/lixeira.png" alt="Ícone Lixeira">
+                       <h3 id="titleDespesa">------</h3>
+                       <p id="titleValue">R$0</p>
+                       <img title="Lixeira" src="img/lixeira.png" alt="Ícone Lixeira" id="iconLixeira">
                    </li>
                </ul>
             </div>
@@ -52,17 +52,17 @@
          <section class="cilindrao">
              <div class="orcamentin">
                  <h3>Orçamento</h3>
-                 <p>+ R$ 0</p>
+                 <p id="totalOrcamento">+ R$0</p>
              </div>
 
              <div class="numberDespesas">
                  <h3>Despesas</h3>
-                 <p>- R$ 0</p>
+                 <p id="totalDespesas">- R$0</p>
              </div>
 
              <div class="saldin">
                  <h3>Saldo</h3>
-                 <p>R$ 0</p>
+                 <p id="saldo">R$0</p>
              </div>
          </section>
 
