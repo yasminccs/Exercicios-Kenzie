@@ -11,7 +11,7 @@ const saldo = document.querySelector('#saldo')
 
 btnCalculate.addEventListener('click', function(){
     totalCost.innerText = `+ R$${inputCost.value}`
-    saldo.innerText = `R$${inputCost.value}`
+    //saldo.innerText = `R$${inputCost.value}`
 })
 
 btnAddDespesa.addEventListener('click', function(){
@@ -21,7 +21,7 @@ btnAddDespesa.addEventListener('click', function(){
         titleDespesa.innerText = `- ${nameDespesa.value}`
         titleValue.innerText = `R$${valueDespesa.value}`
         totalDespesas.innerText = `- R$${valueDespesa.value}`
-        const sld = Number(inputCost.value - valueDespesa.value)
+        const sld = Number(inputCost.value -= valueDespesa.value)
         saldo.innerText = `R$${sld}`
     }
 })
@@ -30,5 +30,5 @@ document.querySelector('#iconLixeira').addEventListener('click', function(){
     titleDespesa.innerText = `------`
     titleValue.innerText = `R$0`
     totalDespesas.innerText = `- R$0`
-    saldo.innerText = `R$${inputCost.value}`
+    //saldo.innerText = `R$${inputCost.value}`
 })
