@@ -8,13 +8,20 @@ const titleDespesa = document.querySelector('#titleDespesa')
 const titleValue = document.querySelector('#titleValue')
 const totalDespesas = document.querySelector('#totalDespesas')
 const saldo = document.querySelector('#saldo')
-let i = 0
 let b = 0
 
+const obj = {
+    orcamento: 0,
+    despesa: 0,
+    saldo: 0
+}
+console.log(obj)
+
 btnCalculate.addEventListener('click', function(){
-    i += Number(inputCost.value)
-    totalCost.innerText = `+ R$${i}`
-    saldo.innerText = `R$${i}`
+    obj.orcamento = Number(inputCost.value)
+    obj.saldo = obj.orcamento
+    totalCost.innerText = `+ R$${obj.orcamento}`
+    saldo.innerText = `R$${obj.saldo}`
 })
 
 btnAddDespesa.addEventListener('click', function(){
@@ -23,16 +30,22 @@ btnAddDespesa.addEventListener('click', function(){
     } else {
         titleDespesa.innerText = `- ${nameDespesa.value}`
         titleValue.innerText = `R$${valueDespesa.value}`
-        b += Number(valueDespesa.value)
-        totalDespesas.innerText = `- R$${b}`
-        const sld = Number(inputCost.value -= valueDespesa.value) //problema do input & subtração do saldo e aumento nao funciona
-        saldo.innerText = `R$${sld}`
+
+        obj.despesa += Number(valueDespesa.value)
+        totalDespesas.innerText = `- R$${obj.despesa}`
+
+        obj.saldo = Number(obj.orcamento - obj.despesa)
+        saldo.innerText = `R$${obj.saldo}`
     }
 })
 
 document.querySelector('#iconLixeira').addEventListener('click', function(){ //remover o valor atual q aparece
     titleDespesa.innerText = `------`
     titleValue.innerText = `R$0`
-    totalDespesas.innerText = `- R$0`
-    //saldo.innerText = `R$${inputCost.value}`
+
+        obj.despesa -= Number(valueDespesa.value)
+        totalDespesas.innerText = `- R$${obj.despesa}`
+
+        obj.saldo = Number(obj.orcamento + obj.despesa)
+        saldo.innerText = `R$${obj.saldo}`
 })
