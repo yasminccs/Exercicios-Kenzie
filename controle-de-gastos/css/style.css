@@ -35,11 +35,7 @@ main section {
     font-size: 2em;
     font-weight: bold;
     line-height: 5px;
-}
-
-.quadradao .pontinho {
-    font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .quadradao input {

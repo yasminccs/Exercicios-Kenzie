@@ -19,7 +19,7 @@ console.log(obj)
 
 btnCalculate.addEventListener('click', function(){
     obj.orcamento = Number(inputCost.value)
-    obj.saldo = obj.orcamento
+    obj.saldo = obj.orcamento - obj.despesa
     totalCost.innerText = `+ R$${obj.orcamento}`
     saldo.innerText = `R$${obj.saldo}`
 })
@@ -46,6 +46,6 @@ document.querySelector('#iconLixeira').addEventListener('click', function(){
         obj.despesa -= Number(valueDespesa.value)
         totalDespesas.innerText = `- R$${obj.despesa}`
 
-        obj.saldo = Number(obj.orcamento + obj.despesa)
+        obj.saldo = Number(obj.orcamento += obj.despesa)
         saldo.innerText = `R$${obj.saldo}`
 })
