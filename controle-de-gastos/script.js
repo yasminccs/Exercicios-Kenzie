@@ -39,7 +39,7 @@ btnAddDespesa.addEventListener('click', function(){
     }
 })
 
-document.querySelector('#iconLixeira').addEventListener('click', function(){ //remover o valor atual q aparece
+document.querySelector('#iconLixeira').addEventListener('click', function(){
     titleDespesa.innerText = `------`
     titleValue.innerText = `R$0`
 
