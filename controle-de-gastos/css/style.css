@@ -28,17 +28,17 @@ main section {
     padding: 30px;
 }
 
-.quadradao {
+.mainSquare {
     width: 600px;
 }
-.quadradao h1 {
+.mainSquare h1 {
     font-size: 2em;
     font-weight: bold;
     line-height: 5px;
     margin-bottom: 40px;
 }
 
-.quadradao input {
+.mainSquare input {
     display: block;
     width: 100%;
     border: none;
@@ -51,7 +51,7 @@ main section {
     margin: 10px 0;
 }
 
-.quadradao button {
+.mainSquare button {
     background-color: #2685da;
     display: block;
     width: 100%;
@@ -65,7 +65,7 @@ main section {
     cursor: pointer;
 }
 
-.totalorca h2 {
+.budget h2 {
     font-size: 0.9em;
     text-transform: uppercase;
     font-weight: bold;
@@ -73,26 +73,26 @@ main section {
     padding-bottom: 5px;
 }
 
-.despesasin h2 {
+.expense h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9em;
 }
 
-.titulodasdespesas {
+.titlesOverhead {
     display: flex;
     margin: 30px 0px 17px 0px;
 }
-.titulodasdespesas p {
+.titlesOverhead p {
     font-size: 16px;
     font-weight: bold;
 }
 
-.titulodasdespesas .tiltaodespesa {
+.titlesOverhead .titleExpense {
     margin-right: 150px;
 }
 
-.listadasdespesas li {
+.listExpenses li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,36 +103,36 @@ main section {
     border-radius: 2px;
 }
 
-img#iconLixeira{
+img#iconTrash{
     cursor: pointer;
 }
 
-.cilindrao {
+.generalValues {
     width: 300px;
 }
 
-.cilindrao div {
+.generalValues div {
     text-align: center;
     margin-bottom: 90px;
 }
-.cilindrao div h3 {
+.generalValues div h3 {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.cilindrao div p {
+.generalValues div p {
     font-size: 1.8em;
     font-weight: bold;
 }
 
-.orcamentin p {
+.generalBudget p {
     color: #78ce71;
 }
 
-.numberDespesas p {
+.generalExpense p {
     color: #e44f3c;
 }
 
-.saldin p {
+.sale p {
     color: #64d2ff;
 }
