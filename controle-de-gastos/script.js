@@ -1,14 +1,14 @@
-const inputCost = document.querySelector('#inputValorOrcamento')//input q coloca o orçamento
-const btnCalculate = document.querySelector('#calcularOrcamento')//botao q add o orçamento
-const totalCost = document.querySelector('#totalOrcamento')//orcamento do cilindro
-const nameDespesa = document.querySelector('#nameDespesa')//input q coloca o nome da despesa
-const valueDespesa = document.querySelector('#valueDespesa')//input q coloca o valor da despesa
-const btnAddDespesa = document.querySelector('#addDespesa')//botao de calcular os valore
-const titleDespesa = document.querySelector('#titleDespesa')//para onde vai o nome da despesa
-const titleValue = document.querySelector('#titleValue')//para onde vai o valor da despesa
-const totalDespesas = document.querySelector('#totalDespesas')//despesas totais no cilindrao
-const saldo = document.querySelector('#saldo')//onde mostra o saldo
-let b = 0
+const inputCost = document.querySelector('#inputValueBudget')
+const btnCalculate = document.querySelector('#btnAddBudget')
+const nameDespesa = document.querySelector('#inputNameExpense')
+const valueDespesa = document.querySelector('#inputValueExpense')
+const btnAddDespesa = document.querySelector('#btnAddExpense')
+const titleDespesa = document.querySelector('#pExpense')
+const titleValue = document.querySelector('#pValueExpense')
+
+const totalCost = document.querySelector('#displayBudget')
+const totalDespesas = document.querySelector('#displayExpenses')
+const saldo = document.querySelector('#displaySale')
 
 const obj = {
     orcamento: 0,
@@ -39,7 +39,7 @@ btnAddDespesa.addEventListener('click', function(){
     }
 })
 
-document.querySelector('#iconLixeira').addEventListener('click', function(){
+document.querySelector('#iconTrash').addEventListener('click', function(){
     titleDespesa.innerText = `------`
     titleValue.innerText = `R$0`
 
