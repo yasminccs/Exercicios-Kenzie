@@ -22,7 +22,7 @@ main {
 }
 
 main section {
-    margin: 8px;
+    margin: 15px;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
@@ -40,11 +40,11 @@ main section {
     width: 100%;
     border: none;
     box-shadow: 0 0;
-    box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.108);
+    box-shadow: 0 3px 19px rgba(0, 0, 0, 0.2);
     outline: none;
-    border-radius: 3px;
+    border-radius: 6px;
     height: 30px;
-    padding: 0 10px;
+    padding: 0px 10px;
     margin: 10px 0;
 }
 
@@ -56,14 +56,14 @@ main section {
     color: white;
     font-weight: bold;
     padding: 8px 0;
-    border-radius: 3px;
+    border-radius: 6px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 .budget h2 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: 1px solid #cecece;
@@ -73,7 +73,7 @@ main section {
 .expense h2 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .titlesOverhead {
@@ -82,7 +82,7 @@ main section {
 }
 
 .titlesOverhead p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ main section {
     color: #0c5c05;
     font-weight: bold;
     padding: 30px 20px;
-    border-radius: 2px;
+    border-radius: 6px;
 }
 
 img#iconTrash{
@@ -111,8 +111,12 @@ img#iconTrash{
 
 .generalValues div {
     text-align: center;
+}
+
+.generalBudget, .generalExpense {
     margin-bottom: 40px;
 }
+
 .generalValues div h3 {
     font-size: 1.8em;
     font-weight: bold;
