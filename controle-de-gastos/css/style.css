@@ -122,6 +122,7 @@ img#iconTrash{
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .generalValues div p {
     font-size: 1.8em;
     font-weight: bold;
@@ -137,4 +138,49 @@ img#iconTrash{
 
 .sale p {
     color: #64d2ff;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    main {
+        height: 100vh;
+        width: 970px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .mainSquare {
+        width: 600px;
+    }
+    
+    .mainSquare button {
+        font-size: 16px;
+    }
+    
+    .expense h2, .budget h2 {
+        font-size: 0.9em;
+    }
+    
+    .titlesOverhead .titleExpense {
+        margin-right: 190px;
+    }
+
+    .titlesOverhead p {
+        font-size: 16px;
+    }
+    
+    .generalValues{
+        width: 290px;
+        height: 540px;
+    }
+    
+    /* .generalBudget, .generalExpense {
+        margin-bottom: 40px;
+    }     */
 }
