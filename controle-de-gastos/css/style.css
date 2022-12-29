@@ -35,7 +35,6 @@ main section {
     font-size: 1.7em;
     text-align: center;
     font-weight: bold;
-    /* line-height: 5px; */
     margin-bottom: 25px;
 }
 
@@ -145,7 +144,7 @@ img#iconTrash{
     color: #64d2ff;
 }
 
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 930px){
     body {
         display: flex;
         justify-content: center;
@@ -162,6 +161,11 @@ img#iconTrash{
     
     .mainSquare {
         width: 600px;
+    }
+
+    .mainSquare h1{
+        font-size: 1.9em;
+        margin-bottom: 30px;
     }
     
     .mainSquare button {
@@ -182,10 +186,6 @@ img#iconTrash{
     
     .generalValues{
         width: 290px;
-        height: 540px;
+        height: 522px;
     }
-    
-    .generalBudget, .generalExpense {
-        margin-bottom: 40px;
-    }     
-} */
+}
