@@ -18,7 +18,7 @@ const obj = {
 console.log(obj)
 
 btnCalculate.addEventListener('click', function(){
-    obj.orcamento = Number(inputCost.value)
+    obj.orcamento += Number(inputCost.value)
     obj.saldo = obj.orcamento - obj.despesa
     totalCost.innerText = `+ R$${obj.orcamento}`
     saldo.innerText = `R$${obj.saldo}`
