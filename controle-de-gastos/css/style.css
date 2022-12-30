@@ -38,6 +38,11 @@ main section {
     margin-bottom: 25px;
 }
 
+#allExpenses{
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
 .mainSquare input {
     display: block;
     width: 100%;
@@ -106,7 +111,7 @@ main section {
     font-weight: bold;
     padding: 30px 20px;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 img#iconTrash{
@@ -158,8 +163,8 @@ img#iconTrash{
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    .mainSquare {
+
+    .mainSquare{
         width: 600px;
     }
 
@@ -186,6 +191,6 @@ img#iconTrash{
     
     .generalValues{
         width: 290px;
-        height: 522px;
+        height: 558px;
     }
 }

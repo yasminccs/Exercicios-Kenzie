@@ -10,6 +10,8 @@ const totalCost = document.querySelector('#displayBudget')
 const totalDespesas = document.querySelector('#displayExpenses')
 const saldo = document.querySelector('#displaySale')
 
+const select = document.querySelector('#allExpenses')
+
 const obj = {
     orcamento: 0,
     despesa: 0,
@@ -36,16 +38,18 @@ btnAddDespesa.addEventListener('click', function(){
 
         obj.saldo = Number(obj.orcamento - obj.despesa)
         saldo.innerText = `R$${obj.saldo}`
+
+        const options = document.createElement('option')
+        options.innerText += `${nameDespesa.value} --- R$${valueDespesa.value}`
+        select.append(options)
     }
 })
 
 document.querySelector('#iconTrash').addEventListener('click', function(){
-    titleDespesa.innerText = `------`
-    titleValue.innerText = `R$0`
+    
+    obj.despesa -= Number(valueDespesa.value)
+    totalDespesas.innerText = `- R$${obj.despesa}`
 
-        obj.despesa -= Number(valueDespesa.value)
-        totalDespesas.innerText = `- R$${obj.despesa}`
-
-        obj.saldo = Number(obj.orcamento += obj.despesa)
-        saldo.innerText = `R$${obj.saldo}`
+    obj.saldo = Number(obj.orcamento += obj.despesa)
+    saldo.innerText = `R$${obj.saldo}`
 })
