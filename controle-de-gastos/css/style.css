@@ -46,9 +46,8 @@ main section {
 .mainSquare input {
     display: block;
     width: 100%;
-    border: none;
-    box-shadow: 0 0;
-    box-shadow: 0 3px 19px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 19px rgba(0, 0, 0, 0.4); não aparece no safari*/
+    border-color: rgba(158, 157, 157, 0.35);
     outline: none;
     border-radius: 6px;
     height: 30px;
