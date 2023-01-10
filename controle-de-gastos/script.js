@@ -21,7 +21,8 @@ console.log(obj)
 
 btnCalculate.addEventListener('click', function(){
     obj.orcamento += Number(inputCost.value)
-    obj.saldo = Number(obj.orcamento - obj.despesa)
+    obj.saldo = obj.orcamento - obj.despesa
+
     totalCost.innerText = `+ R$${obj.orcamento}`
     saldo.innerText = `R$${obj.saldo}`
 })
@@ -30,13 +31,12 @@ btnAddDespesa.addEventListener('click', function(){
     if(inputCost.value.length === 0 || nameDespesa.value.length === 0 || valueDespesa.value.length === 0){
         alert('Por favor, preencha todos os campos.')
     } else {
-        titleDespesa.innerText = `- ${nameDespesa.value}`
-        titleValue.innerText = `R$${valueDespesa.value}`
-
         obj.despesa += Number(valueDespesa.value)
-        totalDespesas.innerText = `- R$${obj.despesa}`
-
         obj.saldo = Number(obj.orcamento - obj.despesa)
+        
+        titleValue.innerText = `R$${valueDespesa.value}`
+        titleDespesa.innerText = `- ${nameDespesa.value}`
+        totalDespesas.innerText = `- R$${obj.despesa}`
         saldo.innerText = `R$${obj.saldo}`
 
         const options = document.createElement('option')
@@ -46,10 +46,14 @@ btnAddDespesa.addEventListener('click', function(){
 })
 
 document.querySelector('#iconTrash').addEventListener('click', function(){
-    
     obj.despesa -= Number(valueDespesa.value)
+    obj.saldo = Number(obj.orcamento + obj.despesa)
+    
     totalDespesas.innerText = `- R$${obj.despesa}`
-
-    obj.saldo = Number(obj.orcamento += obj.despesa)
     saldo.innerText = `R$${obj.saldo}`
 })
+
+
+//criar uma array e nela colocar ir adicionando objetos com atributos de nome da despesa e valor e quando a pessoa quiser clicar no botão de remover a despesa em si, buscar na array o objeto e removê-lo e também fazer o cálculo de subtrair o valor da despesa e adicionar no saldo. 
+
+//obs: analisar a utilidade do objeto atual q contem o orçamento, despesa e saldo.
